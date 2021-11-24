@@ -1,23 +1,52 @@
 # Credit_Risk_Analysis
-M17
-For this deliverable, you’ll write a brief summary and analysis of the performance of all the machine learning models used in this Challenge.
 
-The report should contain the following:
+> M17 In this project, the performances of all the supervised machine learning models are used. The analysis and conclusions are as below.
 
-Overview of the analysis: Explain the purpose of this analysis.
+## Overview of the analysis
 
-Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, different techniques are employed to train and evaluate models with unbalanced classes. 
 
-Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
-The written analysis has the following:
+> Libraries: imbalanced-learn scikit-learn
 
-Overview of the loan prediction risk analysis:
+## Results
 
-The purpose of this analysis is well defined (4 pt)
-Results:
+### Naive Random Oversampling
 
-There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
-Summary:
+  * accuracy: 0.6870331414572701
+  * precision: 0.99
+  * recall: 0.60
 
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+### SMOTE Oversampling
+
+  * accuracy: 0.6624818234863711
+  * precision: 0.99
+  * recall: 0.69
+
+### Undersampling
+
+  * accuracy: 0.6624818234863711
+  * precision: 0.99
+  * recall: 0.52
+
+### Combination (Over and Under) Sampling
+
+  * accuracy: 0.6447701423556762
+  * precision: 0.99
+  * recall: 0.57
+
+### Balanced Random Forest Classifier
+
+  * accuracy: 0.9996784377923293
+  * precision: 1.00
+  * recall: 1.00
+
+### Easy Ensemble AdaBoost Classifier
+
+  * accuracy: 1.0
+  * precision: 1.0
+  * recall: 1.0
+
+## Summary
+
+ * Over Sampling and Under Sampling has lower accuracy and recall scores.
+ * The Easy Ensemble AdaBoost Classifier will be employed.
